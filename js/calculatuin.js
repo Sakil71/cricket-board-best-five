@@ -5,7 +5,7 @@ document.getElementById('calculate-button').addEventListener('click', function (
     const allPlayerList = document.querySelectorAll('#all-players li');
     const allListLength = allPlayerList.length;
     const inputElement = getInputFieldById('per-player-expenses');
-
+    
     const totalPlayerExpenses = allListLength * inputElement;
     setElementById('player-expenses', totalPlayerExpenses);
 })
