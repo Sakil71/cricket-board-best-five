@@ -27,8 +27,14 @@ function setPlayersById(setPlayer, selectPlayer) {
     }
 }
 
+// Disable Button
 
-// Input Field
+function disableButton(disable) {
+    const disableButtona = document.getElementById(disable).disabled = true;
+    disableButtona.style.backgroundColor = 'red';
+}
+
+//Get Value from Input Field
 
 function getInputFieldById(inputElement) {
     const inputField = document.getElementById(inputElement);
@@ -40,7 +46,7 @@ function getInputFieldById(inputElement) {
 }
 
 
-// Find Expenses id (string to number)
+// Get innerText id (string to number)
 
 function getExpensesId(idName) {
     const playerCostElement = document.getElementById(idName);
