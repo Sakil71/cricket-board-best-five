@@ -10,6 +10,7 @@ document.getElementById('calculate-button').addEventListener('click', function (
     setElementById('player-expenses', totalPlayerExpenses);
 })
 
+
 // Calculate Total Expenses
 
 document.getElementById('total-calculate-button').addEventListener('click', function(){

@@ -30,8 +30,7 @@ function setPlayersById(setPlayer, selectPlayer) {
 // Disable Button
 
 function disableButton(disable) {
-    const disableButtona = document.getElementById(disable).disabled = true;
-    disableButtona.style.backgroundColor = 'red';
+    document.getElementById(disable).disabled = true;
 }
 
 //Get Value from Input Field
