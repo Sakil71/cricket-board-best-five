@@ -126,21 +126,21 @@
                         <h1 class="text-xl font-bold text-center mb-10">Budget</h1>
                         <form action="">
                             <label class="mr-5 font-medium" for="player">Per Player </label>
-                            <input class="w-2/4 bg-black border py-1" type="number" name="" placeholder=" $ Amount">
+                            <input id="per-player-expenses" class="w-2/4 bg-black border py-1" type="number" name="" placeholder=" $ Amount">
                         </form>
-                        <button class="bg-blue-400 hover:bg-blue-600 font-semibold w-full py-1 rounded my-6">Calculate</button>
+                        <button id="calculate-button" class="bg-blue-400 hover:bg-blue-600 font-semibold w-full py-1 rounded my-6">Calculate</button>
 
-                        <h1 class="font-medium mb-5">Player Expenses: $<span>00</span></h1>
+                        <h1 class="font-medium mb-5">Player Expenses: $<span id="player-expenses">00</span></h1>
                         <form action="">
                             <label class="font-medium mb-6 mr-6" for="manager">Manager </label>
-                            <input class="w-2/4 bg-black border py-1 mb-8" type="number" name="" placeholder=" $ Amount">
+                            <input id="manager-expense" class="w-2/4 bg-black border py-1 mb-8" type="number" name="" placeholder=" $ Amount">
                             
                             <label class="font-medium mb-6 mr-6" for="coach">Coach </label>
-                            <input class="w-2/4 bg-black border py-1" type="number" name="" placeholder=" $ Amount">
+                            <input id="coach-expense" class="w-2/4 bg-black border py-1" type="number" name="" placeholder=" $ Amount">
                         </form>
 
-                        <button class="bg-blue-400 hover:bg-blue-600 font-semibold w-full py-1 rounded my-6">Calculate Total</button>
-                        <h1 class="font-medium mt-4 text-center">Total <span class="text-red-600"> $<span>00</span></span></h1>
+                        <button id="total-calculate-button" class="bg-blue-400 hover:bg-blue-600 font-semibold w-full py-1 rounded my-6">Calculate Total</button>
+                        <h1 class="font-medium mt-4 text-center">Total <span class="text-red-600"> $<span id="total">00</span></span></h1>
 
                     </div>
                 </div>
@@ -151,6 +151,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/handler.js"></script>
+    <script src="js/calculatuin.js"></script>
 </body>
 
 <footer class="bg-neutral-900 text-sky-200 text-center">
